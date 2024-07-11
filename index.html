@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <!-- 3rd step -->
+        <header class="p-4 mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <a class="logo" href="index.html">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn btn-primary btn-large nfx-btn">
+                            Add Movie
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row" id="movieContainer">
+                <!-- <div class="col-md-4">
+                    <div class="card movieCard">
+                        <figure class="m-0">
+                            <img src="" alt="">
+
+                            <figcaption>
+                                <h3>
+                                    Chak De India
+                                </h3>
+
+                                <strong>Rating : 5/5</strong>
+
+                                <p class="content">
+                                    Kabir Khan, an ex-Indian hockey player accused of dishonouring his country in a global hockey tournament, starts coaching the Indian women's national hockey team to show his devotion to the nation.
+                                </p>
+                                <div>
+                                    <button class="btn btn-sm btn-light">
+                                        Edit
+                                    </button>
+                                    <button class="btn btn-sm nfx-btn text-white">
+                                        Remove
+                                    </button>
+                                </div>
+                            </figcaption>
+
+                        </figure>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="backDrop" id="backDrop">
+
+        </div>
+
+        <div class="movieModal" id="movieModal">
+            <div class="card">
+                <div class="card-body">
+                    <form id="movieForm">
+                        <div class="form-group">
+                            <label for="title">Movie Title</label>
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="movieUrl">Movie Url</label>
+                            <input type="text" class="form-control" id="movieUrl">
+                        </div>
+                        <div class="form-group">
+                            <label for="content">Content</label>
+                            <textarea rows="" class="form-control" id="content"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Rating</label>
+                            <select class="form-control" id="rating">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>

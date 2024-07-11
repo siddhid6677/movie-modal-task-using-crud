@@ -1,0 +1,105 @@
+
+:root{
+    --primary-color: rgb(229,9,20);
+    --dark-color: rgba(0, 0, 0, 0.8);
+    --white-color: #ffffff;
+}
+
+/* 1 step */
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(../images/movieMImg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body::after{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(../images/movieMImg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    filter: blur(3px);
+}
+
+/* 4th step */
+
+.logo{
+    width: 9.25rem;
+    height: 2.5rem;
+    display: block;
+}
+
+.logo img{
+    display: inline-block;
+    width : 100%;
+    object-fit : cover;
+
+}
+
+.btn.nfx-btn{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.card.movieCard{
+    border: 0px;
+}
+
+.card.movieCard figure{
+    height: 350px;
+    transition: all .4s ease-in-out;
+    position: relative;
+}
+
+.card.movieCard figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 1) 100%);
+    color: #fff;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.card.movieCard figure img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+}
+
+.card.movieCard:hover figure{
+    transform: scale(1.15);
+}
+
+.card.movieCard:hover figcaption{
+    opacity: 1;
+}
+
+.backDrop{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.movieModal{
+    position: fixed;
+    height: 300px;
+    background-color: #fff;
+    width: 60%;
+    top: 25%;
+    left: 20%;
+}
